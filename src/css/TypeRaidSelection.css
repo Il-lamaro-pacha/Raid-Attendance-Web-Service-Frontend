@@ -1,0 +1,142 @@
+.type-raid-selection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+
+  padding: 15px 20px;
+  text-align: center;
+
+  border-bottom: 2px solid #CCAA00;
+}
+
+.header h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: #CCAA00;
+  letter-spacing: 2px;
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+.vertical-list {
+  width: 100%;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Loader container */
+.loader {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  border: 3px solid rgba(204, 170, 0, 0.2);
+  border-top: 3px solid #CCAA00;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+/* Animazione */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Errore */
+.error {
+  text-align: center;
+  padding: 20px;
+
+  color: #ff4d4d;
+  font-family: 'Cinzel', serif;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2000;
+}
+
+.modal {
+  background: #111;
+  border: 1px solid #CCAA00;
+  border-radius: 12px;
+
+  padding: 25px;
+  width: 300px;
+
+  text-align: center;
+}
+
+.modal h2 {
+  color: #CCAA00;
+  margin-bottom: 15px;
+  font-family: 'Cinzel', serif;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid #444;
+  background: #000;
+  color: #fff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal button {
+  padding: 8px 12px;
+  cursor: pointer;
+
+  background: #CCAA00;
+  border: none;
+  color: black;
+  font-weight: bold;
+}

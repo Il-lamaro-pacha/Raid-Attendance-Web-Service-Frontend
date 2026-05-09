@@ -1,0 +1,181 @@
+/* PAGINA */
+.registration-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+}
+
+/* HEADER */
+.registration-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  background-color: black;
+}
+
+.registration-header h1 {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  color: #CCAA00;
+  letter-spacing: 2px;
+  animation: pulseGlow 5s ease-in-out infinite;
+}
+
+/* CONTAINER */
+.registration-container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+/* CARD */
+.registration-box {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 40px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-box select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+}
+
+/* OPTION */
+.registration-box option {
+  background-color: #111;
+  color: white;
+}
+
+.registration-box h2 {
+  margin-bottom: 20px;
+  color: #CCAA00;
+  font-family: 'Cinzel', serif;
+}
+
+/* INPUT GROUP */
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LABEL */
+.input-group label {
+  margin-bottom: 6px;
+  color: #CCAA00;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* INPUT + SELECT */
+.registration-box input,
+.registration-box select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px;
+  margin: 10px 0;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: transparent;
+  color: white;
+
+  transition: 0.25s;
+}
+
+/* OPTION */
+.registration-box option {
+  background-color: #111;
+  color: white;
+}
+
+/* FOCUS */
+.registration-box input:focus,
+.registration-box select:focus {
+  outline: none;
+  border-color: #CCAA00;
+  box-shadow: 0 0 8px rgba(204, 170, 0, 0.3);
+}
+
+/* BUTTON */
+.registration-box button {
+  width: 100%;
+  max-width: 140px;
+
+  padding: 8px;
+  margin-top: 20px;
+
+  border-radius: 6px;
+  border: 2px solid transparent;
+
+  background: rgba(204, 170, 0, 0.15);
+  color: #CCAA00;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.registration-box button:hover {
+  border-color: #CCAA00;
+  background: rgba(204, 170, 0, 0.35);
+}
+
+/* ERROR */
+.error-message {
+  margin-top: 15px;
+  color: #ff4d4d;
+}
+
+/* SPINNER */
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  margin-top: 20px;
+
+  border: 3px solid rgba(204, 170, 0, 0.2);
+  border-top: 3px solid #CCAA00;
+
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+.select-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.select-group label {
+  margin-bottom: 6px;
+  color: #CCAA00;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

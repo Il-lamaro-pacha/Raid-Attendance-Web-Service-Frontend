@@ -1,0 +1,135 @@
+.raid-type-card {
+  width: 100%;
+  min-height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 22px;
+  border-radius: 12px;
+
+  /* base dark */
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border: 1px solid rgba(204, 170, 0, 0.2);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* linea decorativa a sinistra (stile lista) */
+.raid-type-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.raid-type-card:hover {
+  transform: translateX(6px);
+
+  border-color: #CCAA00;
+
+  box-shadow:
+    0 0 10px rgba(204, 170, 0, 0.3),
+    0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Attiva la barra laterale */
+.raid-type-card:hover::before {
+  background: #CCAA00;
+  box-shadow: 0 0 10px rgba(204, 170, 0, 0.6);
+}
+
+/* Selezionata */
+.raid-type-card.selected {
+  background: linear-gradient(145deg, #262000, #1a1600);
+  border: 2px solid #CCAA00;
+
+  box-shadow:
+    0 0 18px rgba(204, 170, 0, 0.7),
+    inset 0 0 12px rgba(204, 170, 0, 0.2);
+}
+
+/* Barra sempre visibile quando selezionata */
+.raid-type-card.selected::before {
+  background: #CCAA00;
+  width: 6px;
+}
+
+/* Contenuto sinistra */
+.raid-type-card h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1em;
+  font-weight: 700;
+
+  color: #f5f5f5;
+
+  letter-spacing: 1.5px;
+  margin: 0;
+
+  transition: color 0.2s ease;
+}
+
+/* Hover testo */
+.raid-type-card:hover h2 {
+  color: #CCAA00;
+}
+
+/* Selezionato testo */
+.raid-type-card.selected h2 {
+  color: #CCAA00;
+}
+
+/* (opzionale) freccia/destra tipo lista */
+.raid-type-card::after {
+  content: "›";
+  font-size: 1.4em;
+  color: rgba(204, 170, 0, 0.5);
+
+  transition: all 0.25s ease;
+}
+
+.raid-type-card:hover::after {
+  color: #CCAA00;
+  transform: translateX(4px);
+}
+
+/* Card aggiunta */
+.add-card {
+  border: 2px dashed rgba(204, 170, 0, 0.4);
+  background: rgba(204, 170, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+}
+
+.add-card h2 {
+  color: rgba(204, 170, 0, 0.7);
+}
+
+/* Hover */
+.add-card:hover {
+  background: rgba(204, 170, 0, 0.1);
+  border-color: #CCAA00;
+
+  transform: scale(1.05);
+
+  box-shadow: 0 0 15px rgba(204, 170, 0, 0.4);
+}
+
+.add-card:hover h2 {
+  color: #CCAA00;
+}
