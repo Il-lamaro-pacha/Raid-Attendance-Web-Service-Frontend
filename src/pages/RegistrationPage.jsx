@@ -64,7 +64,7 @@ function RegistrationPage() {
 
             // 2. Chiamata backend FastAPI
             const response = await fetch(
-                "http://localhost:8000/attendance_service/registration",
+                 `${import.meta.env.VITE_BACKEND_URL}/attendance_service/registration`,
                 {
                     method: "POST",
                     headers: {
