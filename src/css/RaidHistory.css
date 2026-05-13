@@ -7,11 +7,27 @@
 /* HEADER */
 .header {
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+  }
 }
 
 .header h1 {
   color: #CCAA00;
   font-family: 'Cinzel', serif;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+  }
 }
 
 /* TABLE WRAPPER */
@@ -19,6 +35,17 @@
   flex: 1;
   overflow-y: auto;
   padding: 20px;
+  overflow-x: auto;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+    overflow-x: auto;
+  }
 }
 
 /* TABLE */
@@ -26,6 +53,7 @@
   width: 100%;
   border-collapse: collapse;
   color: white;
+  min-width: 500px;
 }
 
 .attendance-table th,
@@ -34,12 +62,26 @@
   border-bottom: 1px solid var(--border);
   text-align: left;
   font-size: medium;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 
 .attendance-table th {
   color: #CCAA00;
   font-family: 'Cinzel', serif;
   font-size: larger;
+
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
 }
 
 /* VIEW BUTTON */
@@ -51,6 +93,11 @@
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+
+  @media (max-width: 575px) {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
 
 .view-btn:hover {

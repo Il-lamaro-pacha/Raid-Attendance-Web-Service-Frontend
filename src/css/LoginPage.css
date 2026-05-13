@@ -12,6 +12,14 @@
   border-bottom: 1px solid var(--border);
   text-align: center;
   background-color: black;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+  }
 }
 
 .login-header h1 {
@@ -20,6 +28,20 @@
   color: #CCAA00;
   letter-spacing: 2px;
   animation: pulseGlow 5s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }
 
 /* AREA LOGIN */
@@ -31,6 +53,16 @@
   justify-content: center;
   gap: 20px;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  @media (max-width: 575px) {
+    gap: 14px;
+    padding: 12px;
+  }
 }
 
 /* BOX LOGIN (card stile dashboard) */
@@ -44,6 +76,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 18px;
+  }
 }
 
 /* INPUT */
@@ -56,6 +96,17 @@
   background: transparent;
   color: white;
   transition: 0.25s;
+
+  @media (max-width: 768px) {
+    width: 250px;
+    padding: 10px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+  }
 }
 
 .login-container input:focus {
@@ -80,6 +131,12 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+
+  @media (max-width: 575px) {
+    max-width: 100px;
+    padding: 7px;
+    font-size: 14px;
+  }
 }
 
 .login-container button:hover {
@@ -95,6 +152,16 @@
   display: flex;
   justify-content: center;
   background-color: black;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    margin-top: 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 16px;
+    margin-top: 12px;
+  }
 }
 
 .footer-content {
@@ -103,16 +170,32 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 575px) {
+    gap: 16px;
+  }
 }
 
 .footer h2 {
   color: #CCAA00;
   font-family: 'Cinzel', serif;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
 }
 
 .footer p {
   font-size: 16px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
 }
 
 .registration-section{
@@ -123,6 +206,10 @@
   font-size: 14px;
   display: inline;
   padding-right: 5px;
+
+  @media (max-width: 575px) {
+    font-size: 12px;
+  }
 }
 
 
@@ -143,6 +230,18 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 24px;
+  }
+
+  @media (max-width: 575px) {
+    gap: 20px;
+  }
 }
 
 .registration-link:hover {

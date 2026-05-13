@@ -3,6 +3,25 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
 }
 
 .card {
@@ -17,6 +36,15 @@
   overflow: hidden;
   position: relative;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    height: 180px;
+  }
+
+  @media (max-width: 575px) {
+    height: 150px;
+  }
 }
 
 .card-bg:hover {
@@ -51,6 +79,17 @@
   margin: 0;
 
   animation: pulseGlow 5s ease-in-out infinite;
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1em;
+    letter-spacing: 0.8px;
+  }
 }
 
 @keyframes pulseGlow {

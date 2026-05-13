@@ -18,6 +18,22 @@
 
   position: relative;
   overflow: hidden;
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    min-height: 72px;
+    padding: 16px 18px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 64px;
+    padding: 14px 16px;
+  }
+
+  @media (max-width: 575px) {
+    min-height: 56px;
+    padding: 12px 14px;
+  }
 }
 
 /* linea decorativa a sinistra (stile lista) */
@@ -78,6 +94,22 @@
   margin: 0;
 
   transition: color 0.2s ease;
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    font-size: 1em;
+    letter-spacing: 1.2px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.95em;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 0.9em;
+    letter-spacing: 0.8px;
+  }
 }
 
 /* Hover testo */
@@ -97,6 +129,19 @@
   color: rgba(204, 170, 0, 0.5);
 
   transition: all 0.25s ease;
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1em;
+  }
 }
 
 .raid-type-card:hover::after {
@@ -114,6 +159,12 @@
   justify-content: center;
 
   transition: all 0.25s ease;
+
+  /* Responsive design */
+  @media (max-width: 575px) {
+    min-height: 56px;
+    padding: 12px 14px;
+  }
 }
 
 .add-card h2 {

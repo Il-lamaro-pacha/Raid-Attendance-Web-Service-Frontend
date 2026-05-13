@@ -6,8 +6,17 @@
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
+
   @media (max-width: 1024px) {
     height: 48px;
+  }
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
+
+  @media (max-width: 575px) {
+    height: 32px;
   }
 }
 
@@ -24,6 +33,14 @@
   text-align: center;
 
   border-bottom: 2px solid #CCAA00;
+
+  @media (max-width: 768px) {
+    padding: 12px 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 10px 12px;
+  }
 }
 
 .header h1 {
@@ -32,6 +49,20 @@
   color: #CCAA00;
   letter-spacing: 2px;
   animation: pulseGlow 5s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }
 
 .vertical-list {
@@ -44,6 +75,31 @@
 
   padding: 20px;
   box-sizing: border-box;
+
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 16px;
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 16px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 14px;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+  }
 }
 
 /* Loader container */
@@ -80,6 +136,15 @@
 
   color: #ff4d4d;
   font-family: 'Cinzel', serif;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 
 .modal-overlay {
@@ -108,12 +173,26 @@
   width: 300px;
 
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    width: 280px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 16px;
+    width: min(90vw, 250px);
+  }
 }
 
 .modal h2 {
   color: #CCAA00;
   margin-bottom: 15px;
   font-family: 'Cinzel', serif;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
 }
 
 .modal input {

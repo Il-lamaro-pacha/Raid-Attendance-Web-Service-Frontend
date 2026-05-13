@@ -9,6 +9,14 @@
 .header {
     padding: 20px;
     border-bottom: 1px solid #333;
+
+    @media (max-width: 768px) {
+        padding: 16px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 12px;
+    }
 }
 
 /* CARDS */
@@ -16,6 +24,14 @@
     flex: 1;
     overflow-y: auto;
     padding: 20px;
+
+    @media (max-width: 768px) {
+        padding: 16px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 12px;
+    }
 }
 
 .history-card {
@@ -27,6 +43,17 @@
     margin-bottom: 25px;
 
     transition: all 0.4s ease;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 575px) {
+        gap: 12px;
+        margin-bottom: 16px;
+        flex-direction: column;
+    }
 }
 
 /* LEFT / RIGHT CARD */
@@ -41,24 +68,47 @@
     flex-direction: column;
     align-items: center; /* FIX CENTRATO LATO DESTRO */
     text-align: center;
+
+    @media (max-width: 768px) {
+        width: 200px;
+        padding: 12px;
+    }
+
+    @media (max-width: 575px) {
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+    }
 }
 
 .card-title {
     color: #CCAA00;
     margin-bottom: 10px;
     font-weight: bold;
+
+    @media (max-width: 575px) {
+        font-size: 14px;
+    }
 }
 
 /* PLAYER */
 .player {
     font-weight: bold;
     margin-bottom: 6px;
+
+    @media (max-width: 575px) {
+        font-size: 13px;
+    }
 }
 
 /* ITEM / SCORE */
 .item, .score {
     font-size: 14px;
     opacity: 0.9;
+
+    @media (max-width: 575px) {
+        font-size: 12px;
+    }
 }
 
 /* ARROW */
@@ -66,6 +116,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 575px) {
+        display: none;
+    }
 }
 
 .arrow {
@@ -73,6 +127,10 @@
     color: #CCAA00;
     text-shadow: 0 0 8px #CCAA00;
     opacity: 0.9;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 /* ROLLBACK ANIMATION */
@@ -93,6 +151,18 @@
     border-top: 2px solid #CCAA00;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 10px;
+        gap: 6px;
+    }
 }
 
 .actions button {
@@ -102,6 +172,11 @@
     color: #CCAA00;
     cursor: pointer;
     transition: 0.3s;
+
+    @media (max-width: 575px) {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
 }
 
 .actions button:hover {

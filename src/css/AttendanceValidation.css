@@ -11,6 +11,14 @@
   padding: 20px;
   border-bottom: 1px solid var(--border);
   position: relative;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+  }
 }
 
 /* TABLE SCROLL */
@@ -18,6 +26,17 @@
   flex: 1;
   overflow-y: auto;
   padding: 20px;
+  overflow-x: auto;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  @media (max-width: 575px) {
+    padding: 12px;
+    overflow-x: auto;
+  }
 }
 
 /* TABLE STYLE (stesso stile dell'altra) */
@@ -25,6 +44,7 @@
   width: 100%;
   border-collapse: collapse;
   color: white;
+  min-width: 500px;
 }
 
 .validation-table th,
@@ -33,6 +53,16 @@
   border-bottom: 1px solid var(--border);
   text-align: left;
   font-size: medium;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 8px;
+    font-size: 12px;
+  }
 }
 
 /* HEADER TABLE */
@@ -40,6 +70,10 @@
   color: #CCAA00;
   font-family: 'Cinzel', serif;
   font-size: larger;
+
+  @media (max-width: 575px) {
+    font-size: 13px;
+  }
 }
 
 /* HOVER ROW (bonus UX) */
@@ -56,6 +90,11 @@
   cursor: pointer;
   font-weight: bold;
   transition: 0.25s;
+
+  @media (max-width: 575px) {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
 }
 
 /* ACCEPT → verde */
@@ -89,12 +128,23 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 
   padding: 15px;
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(6px);
 
   border-top: 2px solid #CCAA00;
+
+  @media (max-width: 768px) {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  @media (max-width: 575px) {
+    gap: 8px;
+    padding: 10px;
+  }
 }
 
 .actions button {
@@ -105,6 +155,11 @@
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+
+  @media (max-width: 575px) {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
 }
 
 .validate-button.active {
@@ -143,6 +198,21 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 575px) {
+    bottom: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
 }
 
 .header-csv-button:hover:not(:disabled) {
